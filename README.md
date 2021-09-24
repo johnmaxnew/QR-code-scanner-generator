@@ -1,6 +1,6 @@
 # proscan
 
-A new Flutter project.
+A QR Code scanner and generator with Flutter.
 
 ## Getting Started
 
