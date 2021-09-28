@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
                     backgroundImage: AssetImage("assets/images/logo.png"),
                     foregroundColor: Colors.transparent,
                     backgroundColor: Colors.transparent,
-                    radius: 150,
+                    radius: 80,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -45,8 +45,11 @@ class _HomePageState extends State<HomePage> {
                           width: ((MediaQuery.of(context).size.width) / 2) - 45,
                           height: 50,
                           child:  OutlinedButton(
-                              child: Text('Scan QR'),
-                              onPressed: () {
+                              child: Text(
+                                'Scan QR',
+                                style: TextStyle(fontSize: 19),
+                                ),
+                                onPressed: () {
                                 print('Pressed');
                             },
                           ),                       
