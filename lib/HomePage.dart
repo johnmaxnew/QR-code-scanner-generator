@@ -31,10 +31,28 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   CircleAvatar(
-                    backgroundImage: AssetImage("assets/images/icon.png"),
+                    backgroundImage: AssetImage("assets/images/logo.png"),
                     foregroundColor: Colors.transparent,
                     backgroundColor: Colors.transparent,
                     radius: 150,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Hero(
+                        tag: "Scan QR",
+                        child: Container(
+                          width: ((MediaQuery.of(context).size.width) / 2) - 45,
+                          height: 50,
+                          child:  OutlinedButton(
+                              child: Text('Scan QR'),
+                              onPressed: () {
+                                print('Pressed');
+                            },
+                          ),                       
+                        ),
+                      )
+                    ],
                   )
                 ],
               ),
