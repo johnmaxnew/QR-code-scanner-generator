@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:proscan/scanner/ScanQR.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({ Key key }) : super(key: key);
@@ -45,13 +46,19 @@ class _HomePageState extends State<HomePage> {
                           width: ((MediaQuery.of(context).size.width) / 2) - 45,
                           height: 50,
                           child:  OutlinedButton(
-                              child: Text(
-                                'Scan QR',
-                                style: TextStyle(fontSize: 19),
-                                ),
-                                onPressed: () {
-                                print('Pressed');
-                            },
+                              child: Text('Scan QR',style: TextStyle(fontSize: 19),),
+                              style: OutlinedButton.styleFrom(
+                                primary: Colors.white,
+                                backgroundColor: Colors.deepPurpleAccent,
+                                shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30))),
+                              
+                              ),
+                              onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => ScanQR()));
+                              },
+                              onLongPress: () {
+                                print('Long press');
+                              },
                           ),                       
                         ),
                       )
