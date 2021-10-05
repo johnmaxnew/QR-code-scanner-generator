@@ -55,8 +55,8 @@ class _ScanQRState extends State<ScanQR> {
               ),
               SizedBox(height: 15),
               Container(
-                width: ((MediaQuery.of(context).size.width) / 2) - 45,
-                height: 35,
+                width: ((MediaQuery.of(context).size.width) / 1.1) - 45,
+                height: 45,
                 child: OutlineButton(
                   focusColor: Colors.red,
                   highlightColor: Colors.blue,
