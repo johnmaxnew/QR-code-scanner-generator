@@ -84,7 +84,54 @@ class _HomePageState extends State<HomePage> {
                         ),                       
                       ),
                     ],
-                  )
+                  ),
+
+
+                  Container(
+                    width: ((MediaQuery.of(context).size.width) / 1.2) - 45,
+                    height: 50,
+                    child: OutlineButton(
+                      focusColor: Colors.red,
+                      highlightColor: Colors.blue,
+                      hoverColor: Colors.lightBlue[100],
+                      splashColor: Colors.blue,
+                      borderSide: BorderSide(
+                        width: 3,
+                        color: Colors.blue,
+                      ),
+                      shape: StadiumBorder(),
+                      child: Text(
+                        "Generate QR",
+                        style: TextStyle(fontSize: 17),),
+                      
+                    ),
+                  ),
+
+
+
+                  Container(
+                    width: ((MediaQuery.of(context).size.width) / 1.2) - 45,
+                    height: 50,
+                    child: OutlineButton(
+                      focusColor: Colors.red,
+                      highlightColor: Colors.blue,
+                      hoverColor: Colors.lightBlue[100],
+                      splashColor: Colors.blue,
+                      borderSide: BorderSide(
+                        width: 3,
+                        color: Colors.blue,
+                      ),
+                      shape: StadiumBorder(),
+                      child: Text(
+                        "Generate QR",
+                        style: TextStyle(fontSize: 17),),
+                      
+                    ),
+                  ),
+
+
+
+
                 ],
               ),
           ),
