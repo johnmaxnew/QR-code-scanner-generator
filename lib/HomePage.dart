@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:proscan/generator/QRGenerator.dart';
 import 'package:proscan/scanner/ScanQR.dart';
 
 class HomePage extends StatefulWidget {
@@ -61,7 +62,27 @@ class _HomePageState extends State<HomePage> {
                               },
                           ),                       
                         ),
-                      )
+                      ),
+                      SizedBox(height: 25,),
+                      Container(
+                        width: ((MediaQuery.of(context).size.width) / 2) - 45,
+                        height: 50,
+                        child:  OutlinedButton(
+                            child: Text('Generate QR',style: TextStyle(fontSize: 19),),
+                            style: OutlinedButton.styleFrom(
+                              primary: Colors.white,
+                              backgroundColor: Colors.deepPurpleAccent,
+                              shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30))),
+                            
+                            ),
+                            onPressed: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => QRGenerator()));
+                            },
+                            onLongPress: () {
+                              print('Long press');
+                            },
+                        ),                       
+                      ),
                     ],
                   )
                 ],

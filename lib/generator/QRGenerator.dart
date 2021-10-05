@@ -43,8 +43,8 @@ class _QRGeneratorState extends State<QRGenerator> {
               ),
             ),
             Container(
-              width: ((MediaQuery.of(context).size.width) / 2) - 45,
-              height: 35,
+              width: ((MediaQuery.of(context).size.width) / 1.2) - 45,
+              height: 50,
               child: OutlineButton(
                 focusColor: Colors.red,
                 highlightColor: Colors.blue,
