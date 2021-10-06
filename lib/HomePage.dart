@@ -38,12 +38,12 @@ class _HomePageState extends State<HomePage> {
                     backgroundImage: AssetImage("assets/images/logo.png"),
                     foregroundColor: Colors.transparent,
                     backgroundColor: Colors.transparent,
-                    radius: 80,
+                    radius: 50,
                   ),
 
 
 
-                  SizedBox(height: 55,),
+                  SizedBox(height: 65,),
 
                   // New
                   Container(
