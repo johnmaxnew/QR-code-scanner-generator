@@ -24,10 +24,12 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: Container(
+        width: double.infinity,
         height: MediaQuery.of(context).size.height,
         child: SingleChildScrollView(
           child: ConstrainedBox(
-              constraints: BoxConstraints(minHeight: (MediaQuery.of(context).size.height) - AppBar().preferredSize.height - kToolbarHeight),
+              constraints: BoxConstraints(
+                minHeight: (MediaQuery.of(context).size.height) - AppBar().preferredSize.height - kToolbarHeight),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -38,56 +40,7 @@ class _HomePageState extends State<HomePage> {
                     backgroundColor: Colors.transparent,
                     radius: 80,
                   ),
-                  // Row(
-                    // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    // children: [
-                      // Hero(
-                      //   tag: "Scan QR",
-                      //   child: Container(
-                      //     width: ((MediaQuery.of(context).size.width) / 2) - 45,
-                      //     height: 50,
-                      //     child:  OutlinedButton(
-                      //         child: Text('Scan QR',style: TextStyle(fontSize: 19),),
-                      //         style: OutlinedButton.styleFrom(
-                      //           primary: Colors.white,
-                      //           backgroundColor: Colors.deepPurpleAccent,
-                      //           shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30))),
-                              
-                      //         ),
-                      //         onPressed: () {
-                      //         Navigator.push(context, MaterialPageRoute(builder: (context) => ScanQR()));
-                      //         },
-                      //         onLongPress: () {
-                      //           print('Long press');
-                      //         },
-                      //     ),                       
-                      //   ),
-                      // ),
 
-                      // SizedBox(height: 25,),
-
-
-                      // Container(
-                      //   width: ((MediaQuery.of(context).size.width) / 2) - 45,
-                      //   height: 50,
-                      //   child:  OutlinedButton(
-                      //       child: Text('Generate QR',style: TextStyle(fontSize: 19),),
-                      //       style: OutlinedButton.styleFrom(
-                      //         primary: Colors.white,
-                      //         backgroundColor: Colors.deepPurpleAccent,
-                      //         shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30))),
-                            
-                      //       ),
-                      //       onPressed: () {
-                      //       Navigator.push(context, MaterialPageRoute(builder: (context) => QRGenerator()));
-                      //       },
-                      //       onLongPress: () {
-                      //         print('Long press');
-                      //       },
-                      //   ),                       
-                      // ),
-                    // ],
-                  // ),
 
                   SizedBox(height: 55,),
 
@@ -121,8 +74,7 @@ class _HomePageState extends State<HomePage> {
                   ),
 
                   SizedBox(height: 25,),
-
-
+                  
                   // New
                   Container(
                     width: ((MediaQuery.of(context).size.width) / 1.1) - 45,
@@ -151,7 +103,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
 
-
+                  
                 ],
               ),
           ),
